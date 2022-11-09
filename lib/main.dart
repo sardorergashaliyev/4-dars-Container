@@ -11,21 +11,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Container(
-      color: Colors.white,
+      color: Colors.black,
       child: Center(
           child: Container(
-              height: 100,
+              height: 200,
               width: 200,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 255, 255, 255),
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.lightBlue, width: 5),
+                color: Colors.black,
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.blue,
+                    blurRadius: 50,
+                    spreadRadius: 20,
+                  )
+                ],
+                // borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: Colors.black, width: 6),
               ),
-              child: Center(
-                child: const Text(
-                  'my widget',
+              child: const Center(
+                child: Text(
+                  'Core i9',
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.blue,
                       fontSize: 30,
                       decoration: TextDecoration.none),
                 ),
