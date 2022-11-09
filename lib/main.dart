@@ -17,32 +17,32 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    child: const Text(
-                      'Shine',
-                      style: TextStyle(
-                          color: Colors.white,
-                          decoration: TextDecoration.none,
-                          shadows: [
-                            Shadow(
-                                color: Colors.black,
-                                blurRadius: 20,
-                                offset: Offset(0, 10))
-                          ]),
-                    ),
+                    height: 80,
+                    width: 80,
+                    decoration: const BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 10,
+                              color: Colors.orange,
+                              spreadRadius: 0,
+                              offset: Offset(10, 10))
+                        ]),
                   ),
-                  Center(
-                    child: Container(
-                      height: 200,
-                      width: 200,
-                      decoration:
-                          const BoxDecoration(color: Colors.white, boxShadow: [
-                        BoxShadow(
-                            color: Colors.black,
-                            blurRadius: 10,
-                            spreadRadius: 2,
-                            offset: Offset(5, 12))
-                      ]),
-                    ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                        color: Colors.blue,
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.orange,
+                              blurRadius: 10,
+                              spreadRadius: 2,
+                              offset: Offset(5, 10))
+                        ]),
                   ),
                 ],
               ),
